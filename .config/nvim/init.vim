@@ -19,10 +19,13 @@ Plug 'neovim/nvim-lspconfig'			" native lsp support
 Plug 'vim-airline/vim-airline' 			" colorful status line
 Plug 'ray-x/lsp_signature.nvim' 		" shows hints for the functions
 Plug 'nvim-treesitter/nvim-treesitter' 	" better highlighting 
-Plug 'roxma/LanguageServer-php-neovim',  {'do': 'composer install && composer run-script parse-stubs'}
+"Plug 'roxma/LanguageServer-php-neovim',  {'do': 'composer install && composer run-script parse-stubs'}
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 "------------------------------------------------
+
+colorscheme onedark
 
 "copy to clipboard
 noremap <C-y> "+y  
