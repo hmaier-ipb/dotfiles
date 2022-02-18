@@ -9,7 +9,7 @@ polybar -r my-bar &
 # use feh for background
 #feh --no-fehbg --bg-scale '/home/hendrik/Bilder/backgrounds/stars_space_nebula_141264_1920x1080.jpg' &
 
-feh --no-fehbg --bg-scale '/home/hmaier/Bilder/backgrounds/morrowind_pic.jpeg' &
+feh --no-fehbg --bg-scale '/home/hmaier/Bilder/backgrounds/morrowind_sunrise.jpg' &
 
 # for java applications
 wmname LG3D &
