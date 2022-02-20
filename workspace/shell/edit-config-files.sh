@@ -11,6 +11,8 @@ config_files=(
 	"$HOME/.vimrc"
 	"$HOME/.config/polybar/config"
 	"$HOME/.config/nvim/init.vim"
+	"openmw"
+	"$HOME/workspace/shell/edit-config-files.sh"
 	) 
 
 # single and double quotes are different in bash
@@ -20,5 +22,6 @@ choice=$(printf '%s\n' "${config_files[@]}" | dmenu -i -l 10 -p "Which config fi
 
 [[ "$choice" == "" ]] && exit 0
 [[ "$choice" == "shell scripts" ]] && xfce4-terminal --working-directory=/home/$USER/workspace/shell && exit 0
+[[ "$choice" == "openmw" ]] && xfce4-terminal --working-directory=/home/$USER/workspace/openmw-script && exit 0
 
 xfce4-terminal --maximize --command="nvim $choice"
