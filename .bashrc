@@ -1,6 +1,6 @@
-#
-# ~/.bashrc
-#
+#---------------------------
+# This is my bashrc!
+#---------------------------
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -25,7 +25,3 @@ PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] '
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
-# BEGIN_KITTY_SHELL_INTEGRATION
-if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
-# END_KITTY_SHELL_INTEGRATION
