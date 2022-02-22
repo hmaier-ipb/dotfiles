@@ -42,6 +42,9 @@ super + Print
 super + plus
 	/home/$USER/workspace/shell/edit-config-files.sh
 
+# changing backgrounds
+super + shift + b 
+	/home/$USER/workspace/shell/change-background.sh
 
 #---------------------------
 # bspwm hotkeys

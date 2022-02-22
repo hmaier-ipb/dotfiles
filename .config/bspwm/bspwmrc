@@ -17,6 +17,9 @@ wmname LG3D &
 # start compositor for transparency
 #picom &
 
+# turning on the numpad
+numlockx on &
+
 # declaring the differnt workspaces
 #bspc monitor -d I II III IV V VI VII VIII #### comment 9 and 10 out IX X
 bspc monitor -d 1 2 3 4 5 
@@ -28,6 +31,8 @@ bspc config window_gap           20
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+
+bspc config focus_follows_pointer false
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Steam desktop='^5' state=floating
@@ -41,9 +46,9 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Pycalendar.py state=floating rectangle=600x400+660+100_
 bspc rule -a Zathura state=tiled
 bspc rule -a Android-Studio state=tiled
-bspc rule -a OpenMW state=fullscreen
 
 #----------------------------
 #Auto Start Programms
 #----------------------------
 syncthing -no-browser &
+
