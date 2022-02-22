@@ -221,8 +221,8 @@ format-disconnected = No conncetion :-/
 type = internal/date
 interval = 5
 
-date = "%{A1: .config/polybar/modules/polybar-calendar/calendar.sh:}%A %d %B  %Y,"
-date-alt = "%{A1: .config/polybar/modules/polybar-calendar/calendar.sh:}"
+date = 
+date-alt = 
 
 time = %H:%M
 time-alt = 
