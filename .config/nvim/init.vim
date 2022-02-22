@@ -3,8 +3,8 @@
 "__________________________________________
 
 syntax on
-set relativenumber 	" hybrid
-set number 		" hybrid
+set relativenumber 		" hybrid
+set number 				" hybrid
 set mouse=a
 set tabstop=4
 set shiftwidth=4
@@ -19,11 +19,13 @@ Plug 'neovim/nvim-lspconfig'			" native lsp support
 Plug 'vim-airline/vim-airline' 			" colorful status line
 Plug 'ray-x/lsp_signature.nvim' 		" shows hints for the functions
 Plug 'nvim-treesitter/nvim-treesitter' 	" better highlighting 
-"Plug 'roxma/LanguageServer-php-neovim',  {'do': 'composer install && composer run-script parse-stubs'}
 Plug 'joshdick/onedark.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 "------------------------------------------------
+" For a list of coc-langservers refer to: https://github.com/neoclide/coc.nvim/wiki/Language-servers
+
 
 colorscheme onedark
 
