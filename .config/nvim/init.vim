@@ -15,17 +15,13 @@ set completeopt=menuone,noselect,noinsert
 "Plugins"
 call plug#begin($HOME .'/.config/nvim/plugged' )
 
-Plug 'neovim/nvim-lspconfig'			" native lsp support 
 Plug 'vim-airline/vim-airline' 			" colorful status line
-Plug 'ray-x/lsp_signature.nvim' 		" shows hints for the functions
-Plug 'nvim-treesitter/nvim-treesitter' 	" better highlighting 
 Plug 'joshdick/onedark.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 "------------------------------------------------
 " For a list of coc-langservers refer to: https://github.com/neoclide/coc.nvim/wiki/Language-servers
-
 
 colorscheme onedark
 
@@ -34,25 +30,6 @@ noremap <C-y> "+y
 
 "paste from clipboard
 noremap <C-p> "+p  
-
-"" Language Server Configuration
-:lua << EOF
-	local nvim_lsp = require('lspconfig')
-	local on_attach = function(_, bufnr)
--- 		require('').on_attach() 
-	end	
-	local servers = {'pyright'} -- add language server to this array
-
-	for _, server_name in ipairs(servers) do
-		nvim_lsp[server_name].setup{
---			on_attach = on_attach,
-		}
-	end
-EOF
-"" END of LSP config
-
-" Set omnifunc for autocompletion for languages
-autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
 
 " CTRL + x to open completion
 inoremap <C-x> <C-x><C-o>
