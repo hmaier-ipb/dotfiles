@@ -1,6 +1,6 @@
 #!/bin/bash
 
-path="/home/hmaier/Bilder/backgrounds"
+path="$HOME/Bilder/backgrounds"
 
 choice=$(ls -1 $path | dmenu -l 10 -p "Choose a new background: ")
 

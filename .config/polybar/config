@@ -221,7 +221,7 @@ format-disconnected = No conncetion :-/
 type = internal/date
 interval = 5
 
-date = 
+date = %A %d %B %Y 
 date-alt = 
 
 time = %H:%M
