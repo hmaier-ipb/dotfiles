@@ -12,6 +12,7 @@ alias mouse-config="piper"
 
 alias login-xyz="ssh root@hendrikmaier.xyz"
 alias login-raspi="ssh pi@192.168.178.102" 
+alias mysql-login="mysql -p -u root"
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias show-keys="xev -event keyboard | grep keysym"
