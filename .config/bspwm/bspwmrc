@@ -46,7 +46,7 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Pycalendar.py state=floating rectangle=600x400+660+100_
 bspc rule -a Zathura state=tiled
 bspc rule -a Android-Studio state=tiled
-bspc rule -a "jetbrains-phpstorm" desktop='^1' state=tiled
+bspc rule -a "jetbrains-phpstorm" desktop='^1' state=floating
 
 #----------------------------
 #Auto Start Programms
