@@ -12,7 +12,7 @@ alias mouse-config="piper"
 
 alias login-xyz="ssh root@hendrikmaier.xyz"
 alias login-raspi="ssh pi@192.168.178.102" 
-alias mysql-login="mysql -p -u root"
+alias mysql-login="sudo mysql -p -u root"
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias show-keys="xev -event keyboard | grep keysym"
@@ -27,6 +27,7 @@ alias ls="exa"
 alias nv="nvim"
 alias mp="makepkg -sic"
 alias gc="git clone"
+alias cw="xfce4-terminal --working-directory=$PWD"
 alias zah="zathura"
 alias dfr='/usr/bin/git --git-dir=$HOME/repos/dotfiles/ --work-tree=$HOME'
 
