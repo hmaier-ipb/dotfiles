@@ -12,3 +12,5 @@ syntax on
 set relativenumber 	" hybrid
 set number 		" hybrid
 set mouse=a
+set ignorecase		"case-insensitive searching
+set smartcase
