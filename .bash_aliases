@@ -27,8 +27,9 @@ alias ls="exa"
 alias nv="nvim"
 alias mp="makepkg -sic"
 alias gc="git clone"
-alias cw="xfce4-terminal --working-directory=$PWD"
 alias zah="zathura"
+alias ct="history -a && xfce4-terminal"
+
 alias dfr='/usr/bin/git --git-dir=$HOME/repos/dotfiles/ --work-tree=$HOME'
 
 

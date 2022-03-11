@@ -35,6 +35,8 @@ bspc config gapless_monocle      true
 bspc config focus_follows_pointer false
 bspc config focused_border_color '#40E0D0'
 
+bspc config automatic_scheme spiral
+
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Steam desktop='^5' state=floating
 bspc rule -a Freundesliste desktop='^5' state=pseudo_tiled

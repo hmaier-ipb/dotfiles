@@ -162,6 +162,9 @@ super + shift + {Left,Down,Up,Right}
 super + {Left,Right}
 	bspc desktop -f {prev,next}
 
-#move node when cycling 
+#move node while cycling 
 super + ctrl + {Left,Right}
     bspc node -d {prev,next} --follow
+
+#clone window
+
