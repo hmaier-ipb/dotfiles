@@ -23,4 +23,6 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # RUST
-. "$HOME/.cargo/env"
+if [[ "$HOSTNAME" == "wooden-arch-box" ]]; then
+	. "$HOME/.cargo/env"
+fi
