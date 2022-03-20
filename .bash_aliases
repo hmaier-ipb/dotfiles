@@ -29,6 +29,7 @@ alias mp="makepkg -sic"
 alias gc="git clone"
 alias zah="zathura"
 alias ct="history -a && xfce4-terminal"
+alias disks="lsblk"
 
 alias dfr='/usr/bin/git --git-dir=$HOME/repos/dotfiles/ --work-tree=$HOME'
 
