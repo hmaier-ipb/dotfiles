@@ -19,7 +19,7 @@ super + w
 	brave
 
 # volume control (pavucontrol)
-super + v
+super + alt  + v
 	pavucontrol
 
 # control the volume, check the sink
@@ -63,14 +63,6 @@ super + {_,shift + }c
 super + m
 	bspc desktop -l next
 
-# send the newest marked node to the newest preselected node
-
-
-
-# swap the current node and the biggest window
-#super + g
-#	bspc node -s biggest.window
-
 #---------------------------
 # state/flags
 #---------------------------
@@ -79,9 +71,9 @@ super + m
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
-# set the node flags
-super + ctrl + {m,x,y,z}
-	bspc node -g {marked,locked,sticky,private}
+## set the node flags
+#super + ctrl + {m,x,y,z}
+#	bspc node -g {marked,locked,sticky,private}
 
 #---------------------------
 # focus/swap
@@ -165,6 +157,4 @@ super + {Left,Right}
 #move node while cycling 
 super + ctrl + {Left,Right}
     bspc node -d {prev,next} --follow
-
-#clone window
 
