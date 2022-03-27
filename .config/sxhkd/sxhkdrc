@@ -23,8 +23,9 @@ super + alt  + v
 	pavucontrol
 
 # control the volume, check the sink
-{XF86AudioRaiseVolume,XF86AudioLowerVolume}
-	pactl set-sink-volume 2 {+2%,-2%}
+#{XF86AudioRaiseVolume,XF86AudioLowerVolume}
+super + {period, comma}
+	pactl set-sink-volume 0 {+2%,-2%}
 
 ## open file manager (thunar)
 super + z
