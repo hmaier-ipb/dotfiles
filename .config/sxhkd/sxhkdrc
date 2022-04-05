@@ -156,6 +156,7 @@ super + {Left,Right}
 	bspc desktop -f {prev,next}
 
 #move node while cycling 
+#super + ctrl + {y,x}
 super + ctrl + {Left,Right}
     bspc node -d {prev,next} --follow
 
