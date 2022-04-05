@@ -27,11 +27,6 @@ call plug#end()
 
 colorscheme onedark
 
-"copy to clipboard
-noremap <C-y> "+y  
-
-"paste from clipboard
-noremap <C-p> "+p  
 
 " CTRL + x to open completion
 inoremap <C-x> <C-x><C-o>
