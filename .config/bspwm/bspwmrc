@@ -26,7 +26,7 @@ bspc monitor -d 1 2 3 4 5
 #bspc monitor -d web 2 3 4 steam 
 
 bspc config border_width         3
-bspc config window_gap           20
+bspc config window_gap           10
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
