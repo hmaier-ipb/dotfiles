@@ -53,4 +53,4 @@ bspc rule -a Steam desktop='^5' state=floating
 #Auto Start Programms
 #----------------------------
 syncthing -no-browser &
-
+steam &
