@@ -52,5 +52,14 @@ bspc rule -a Steam desktop='^5' state=floating
 #----------------------------
 #Auto Start Programms
 #----------------------------
-syncthing -no-browser &
-steam &
+
+# home pc
+if [[ $HOSTNAME -eq "wooden-arch-box" ]]; then
+	syncthing -no-browser &
+	steam &
+fi
+
+# work pc
+if [[ $HOSTNAME -eq "azt-4329" ]]; then
+	remmina &
+fi
