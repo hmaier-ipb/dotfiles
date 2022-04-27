@@ -9,7 +9,7 @@ polybar -r my-bar &
 # use feh for background
 #feh --no-fehbg --bg-scale '/home/hendrik/Bilder/backgrounds/stars_space_nebula_141264_1920x1080.jpg' &
 
-feh --no-fehbg --bg-scale '/home/hmaier/Bilder/backgrounds/baum_der_seelen.jpg' &
+feh --no-fehbg --bg-scale '/home/$USER/Bilder/backgrounds/baum_der_seelen.jpg' &
 
 # for java applications
 wmname LG3D &
@@ -48,6 +48,7 @@ bspc rule -a "jetbrains-phpstorm" desktop='^1' state=floating
 bspc rule -a "brave-browser" desktop='^2' state=tiled
 bspc rule -a "minecraft-launcher" desktop='^4' state=tiled
 bspc rule -a Steam desktop='^5' state=floating
+bspc rule -a "Remmina Remote-Desktop Client" desktop='^5' state=tiled
 
 #----------------------------
 #Auto Start Programms
