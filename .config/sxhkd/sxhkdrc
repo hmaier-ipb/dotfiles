@@ -41,11 +41,11 @@ super + Print
 
 # edit config files
 super + plus
-	/home/$USER/workspace/shell/edit-config-files.sh
+	/home/$USER/workspace/shell/production/edit-config-files.sh
 
 # changing backgrounds
 super + b
-	/home/$USER/workspace/shell/change-background.sh
+	/home/$USER/workspace/shell/production/change-background.sh
 
 #---------------------------
 # bspwm hotkeys
