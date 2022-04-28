@@ -47,6 +47,10 @@ super + plus
 super + b
 	/home/$USER/workspace/shell/production/change-background.sh
 
+# starting global protect client
+super + i
+	gpclient access.ipb-halle.de
+
 #---------------------------
 # bspwm hotkeys
 #---------------------------
