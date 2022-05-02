@@ -7,7 +7,6 @@ killall -q polybar
 polybar -r my-bar &
 
 # use feh for background
-#feh --no-fehbg --bg-scale '/home/hendrik/Bilder/backgrounds/stars_space_nebula_141264_1920x1080.jpg' &
 bg=$(cat "/home/$USER/Bilder/backgrounds/active-background.txt")
 feh --no-fehbg --bg-scale $bg &
 
@@ -19,6 +18,9 @@ wmname LG3D &
 
 # turning on the numpad
 numlockx on &
+
+# change cursor for X
+xsetroot -cursor_name left_ptr &
 
 # declaring the differnt workspaces
 #bspc monitor -d I II III IV V VI VII VIII #### comment 9 and 10 out IX X
