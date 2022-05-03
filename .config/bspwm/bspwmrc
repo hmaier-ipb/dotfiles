@@ -7,7 +7,7 @@ killall -q polybar
 polybar -r my-bar &
 
 # use feh for background
-bg=$(cat "/home/$USER/Bilder/backgrounds/active-background.txt")
+bg=$(cat "/home/$USER/Bilder/backgrounds/.active-background.txt")
 feh --no-fehbg --bg-scale $bg &
 
 # for java applications
