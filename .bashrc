@@ -14,9 +14,9 @@ alias ls='ls --color=auto'
 # default prompt -> user, host, path
 #PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] '
 
-# minimal prompt -> just path
-PS1=' \[\033[01;34m\]\w \[\033[00m\] \033[01;32m\]\$\033[00m\] '
-PS2='> '
+# minimal prompt -> just path (messes up)
+PS1=' \[\[\033[01;34m\]\w \n \[\033[01;32m\]\$\[\033[00m\] ' 
+#PS2='> '
 
 
 # Alias definitions.
