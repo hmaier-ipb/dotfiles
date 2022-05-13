@@ -10,7 +10,6 @@ set tabstop=4
 set shiftwidth=4
 set completeopt=menuone,noselect,noinsert
 
-
 "------------------------------------------------
 "Plugins"
 call plug#begin($HOME .'/.config/nvim/plugged' )
