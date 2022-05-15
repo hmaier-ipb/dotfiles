@@ -5,7 +5,7 @@
 syntax on
 set relativenumber 		" hybrid
 set number 				" hybrid
-set mouse=a
+set mouse=a				" enable mouse support
 set tabstop=4
 set shiftwidth=4
 set completeopt=menuone,noselect,noinsert
