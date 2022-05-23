@@ -11,10 +11,12 @@ export EDITOR=vim
 alias ls='ls --color=auto'
 
 # PS1 is the prompt schema (edit the color here)  
-#PS1='\[\033[32m\][\u@\e[0;34m\H\033[32m\] \W]\$\[\033[37m\] '
-PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] '
-#PS1='\[\033[32m\][\W]\$ \n > \033[37m '
-#PS1='\[\033[1;32m\]\h:\W \u$\[\033[0;39m\] '
+# default prompt -> user, host, path
+#PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] '
+
+# minimal prompt -> just path (messes up)
+PS1=' \[\[\033[01;34m\]\w \n \[\033[01;32m\]\$\[\033[00m\] ' 
+#PS2='> '
 
 
 # Alias definitions.

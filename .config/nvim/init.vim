@@ -1,25 +1,17 @@
 "__________________________________________
 " My neovim config file
 "__________________________________________
+source ~/.vimrc
 
-syntax on
-set relativenumber 		" hybrid
-set number 				" hybrid
-set mouse=a
-set tabstop=4
-set shiftwidth=4
 set completeopt=menuone,noselect,noinsert
-
 
 "------------------------------------------------
 "Plugins"
 call plug#begin($HOME .'/.config/nvim/plugged' )
-
 Plug 'vim-airline/vim-airline' 								" colorful status line
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " better highlighting
 Plug 'joshdick/onedark.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 call plug#end()
 "------------------------------------------------
 " For a list of coc-langservers refer to: https://github.com/neoclide/coc.nvim/wiki/Language-servers

@@ -22,6 +22,9 @@ numlockx on &
 # change cursor for X
 xsetroot -cursor_name left_ptr &
 
+# setting keyboard DELAY (when pressing button) and SPEED (of how many chars are typed per second)
+xset r rate 200 30
+
 # declaring the differnt workspaces
 #bspc monitor -d I II III IV V VI VII VIII #### comment 9 and 10 out IX X
 bspc monitor -d 1 2 3 4 5 

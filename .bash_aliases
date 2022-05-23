@@ -32,6 +32,8 @@ alias zah="zathura"
 alias ct="history -a && xfce4-terminal"
 alias disks="lsblk"
 alias netstat="ss -lntu"
+alias uz="unzip"
+alias pwdc="pwd | xclip -selection clipboard"
 
 
 alias dfr='/usr/bin/git --git-dir=$HOME/repos/dotfiles/ --work-tree=$HOME'
