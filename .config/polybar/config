@@ -315,7 +315,7 @@ format-underline = ${colors.primary}
 
 [module/updates]
 type = custom/script
-exec = $HOME/workspace/shell/production/polybar-pacman-updates.sh
+exec = $HOME/.scripts/polybar-pacman-updates.sh
 ;click-left = echo "$(checkupdates | wc -l) updates"
 ;click-left = echo "hello" 
 tail = false
