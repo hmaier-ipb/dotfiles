@@ -68,5 +68,4 @@ fi
 # work pc
 if [[ $HOSTNAME -eq "azt-4329" ]]; then
 	remmina &
-	brave &
 fi

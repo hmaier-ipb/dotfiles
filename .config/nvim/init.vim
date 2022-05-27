@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline' 								" colorful status line
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " better highlighting
 Plug 'joshdick/onedark.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
 call plug#end()
 "------------------------------------------------
 " For a list of coc-langservers refer to: https://github.com/neoclide/coc.nvim/wiki/Language-servers
