@@ -1,5 +1,7 @@
 #!/bin/sh
-
+#------------------------------------------------------------------------------------
+# BSPWM
+#------------------------------------------------------------------------------------
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 #status bar (polybar)
@@ -40,14 +42,13 @@ bspc config gapless_monocle      true
 bspc config focus_follows_pointer false
 bspc config focused_border_color '#40E0D0'
 
-bspc config automatic_scheme spiral
+bspc config automatic_scheme longest_side
 
 bspc rule -a Evince state=floating
 bspc rule -a Viewnior state=floating
 bspc rule -a Screenkey manage=off
 bspc rule -a Pycalendar.py state=floating rectangle=600x400+660+100_
 bspc rule -a Zathura state=tiled
-bspc rule -a Android-Studio state=tiled
 
 bspc rule -a "jetbrains-phpstorm" desktop='^1' state=floating
 bspc rule -a "brave-browser" desktop='^2' state=tiled
@@ -61,8 +62,7 @@ bspc rule -a "Remmina Remote-Desktop Client" desktop='^5' state=pseudo_tiled rec
 
 # home pc
 if [[ $HOSTNAME -eq "wooden-arch-box" ]]; then
-	syncthing -no-browser &
-#	steam &
+	syncthing -no-browser & # reach the server over localhost:8384
 fi
 
 # work pc
