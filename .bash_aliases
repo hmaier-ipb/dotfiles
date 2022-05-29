@@ -1,6 +1,6 @@
-#-----------------
+#-----------------------------------------
 #my nice bash aliases
-#-----------------
+#-----------------------------------------
 alias edit-bashrc="vim /home/hmaier/.bashrc"
 alias edit-bashaliases="vim /home/hmaier/.bash_aliases"
 alias edit-sxhkdconifg="vim ~/.config/sxhkd/sxhkdrc"
