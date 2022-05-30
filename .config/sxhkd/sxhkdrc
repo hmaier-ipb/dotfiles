@@ -51,6 +51,10 @@ super + b
 super + i
 	gpclient access.ipb-halle.de
 
+# printer configuration tool
+super + p
+	system-config-printer
+
 #---------------------------
 # bspwm hotkeys
 #---------------------------
