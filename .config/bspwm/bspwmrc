@@ -63,7 +63,7 @@ bspc rule -a "Remmina Remote-Desktop Client" desktop='^5' state=pseudo_tiled rec
 
 # home pc
 if [[ $HOSTNAME -eq "wooden-arch-box" ]]; then
-	syncthing -no-browser & # reach the server on localhost:8384
+	syncthing -no-browser & # reach gui on localhost:8384
 fi
 
 # work pc
