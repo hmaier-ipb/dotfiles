@@ -55,7 +55,8 @@ bspc rule -a "jetbrains-phpstorm" desktop='^1' state=floating
 bspc rule -a "brave-browser" desktop='^2' state=tiled
 bspc rule -a "minecraft-launcher" desktop='^4' state=tiled
 bspc rule -a Steam desktop='^5' state=floating
-bspc rule -a "Remmina Remote-Desktop Client" desktop='^5' state=pseudo_tiled rectangle=900x500+500+800_
+#bspc rule -a "Remmina Remote-Desktop Client" desktop='^5' state=pseudo_tiled rectangle=900x500+500+800_
+bspc rule -a "org.remmina.Remmina" desktop='^5' state=pseudo_tiled rectangle=1200x600+500+800_
 
 #----------------------------
 #Auto Start Programms
