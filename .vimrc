@@ -1,12 +1,28 @@
 "----------- 
 "   VIMRC   |
 "----------- 
+"
+" Notes:
+" -> Block in-/dedentation: 
+"
+"
+"
+if &compatible          " only if not set before:
+  set nocompatible      " use vim-defaults instead
+  						" of vi-defaults (easier, more user friendly)
+endif
 
 "copy to clipboard
 noremap <C-y> "+y  
 
 "paste from clipboard
 noremap <C-p> "+p  
+
+" Indentation
+vmap <TAB> >gv
+
+" Dedentation
+vmap <S-TAB> <gv
 
 syntax on
 set relativenumber 	" hybrid
