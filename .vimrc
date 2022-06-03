@@ -1,28 +1,15 @@
-"----------- 
-"   VIMRC   |
-"----------- 
-"
-" Notes:
-" -> Block in-/dedentation: 
+"-----------------------------------------------
+" my .VIMRC, the root of all other vim configs	|
+"-----------------------------------------------
 "
 "
-"
-if &compatible          " only if not set before:
-  set nocompatible      " use vim-defaults instead
-  						" of vi-defaults (easier, more user friendly)
+" only if not set before:
+" use vim-defaults instead
+" of vi-defaults (easier, more user friendly)
+if &compatible          
+  set nocompatible      
+  						
 endif
-
-"copy to clipboard
-noremap <C-y> "+y  
-
-"paste from clipboard
-noremap <C-p> "+p  
-
-" Indentation
-vmap <TAB> >gv
-
-" Dedentation
-vmap <S-TAB> <gv
 
 syntax on
 set relativenumber 	" hybrid
@@ -48,3 +35,17 @@ set showmatch
 
 " highlight current line
 set cursorline
+
+" copy to clipboard
+noremap <C-y> "+y  
+
+" paste from clipboard
+noremap <C-p> "+p  
+
+" Indentation
+vmap <TAB> >gv
+
+" Dedentation
+vmap <S-TAB> <gv
+
+

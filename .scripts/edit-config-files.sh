@@ -9,10 +9,11 @@ config_files=(
 	"$HOME/.bash_aliases"
 	"$HOME/.bashrc"
 	"$HOME/.vimrc"
+	"$HOME/.ssh/config"
 	"$HOME/.config/polybar/config"
 	"$HOME/.config/nvim/init.vim"
 	"openmw"
-	"$HOME/workspace/shell/edit-config-files.sh"
+	"$HOME/.scripts/edit-config-files.sh"
 	) 
 
 # single and double quotes are different in bash
