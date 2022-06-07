@@ -55,6 +55,9 @@ super + i
 super + p
 	system-config-printer
 
+super + m
+	/home/$USER/.scripts/mount-devices.sh
+
 #---------------------------
 # bspwm hotkeys
 #---------------------------
@@ -69,7 +72,7 @@ super + {_,shift + }c
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
-super + m
+super + shift + m
 	bspc desktop -l next
 
 #---------------------------
