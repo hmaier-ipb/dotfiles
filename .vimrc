@@ -16,6 +16,8 @@ set relativenumber 	" hybrid
 set number 		" hybrid
 set mouse=a
 
+set shell=/bin/bash 
+
 "case-insensitive searching
 set ignorecase		
 set smartcase
