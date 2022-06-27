@@ -6,7 +6,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 #status bar (polybar)
 killall -q polybar
-polybar -r my-bar &
+polybar --config-file="$HOME/.config/polybar/config.ini" -r bar &
 
 # use feh for background
 bg=$(cat /home/$USER/Bilder/backgrounds/.active-background.txt)
