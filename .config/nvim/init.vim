@@ -7,6 +7,7 @@ set completeopt=menuone,noselect,noinsert
 "------------------------------------------------
 "Plugins"
 call plug#begin($HOME .'/.config/nvim/plugged' )
+Plug 'neovim/nvim-lspconfig'								" native lsp
 Plug 'vim-airline/vim-airline' 								" colorful status line
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " better highlighting
 Plug 'joshdick/onedark.vim'
@@ -23,20 +24,18 @@ inoremap <C-x> <C-x><C-o>
 
 " This lua-code will enable highlighting with treesitter!
 :lua << EOF
-require'nvim-treesitter.configs'.setup {
-	
+-- Inits tree-sitter for code-highlighting
+	require'nvim-treesitter.configs'.setup {
 	ensure_installed = "all",
-
-  	sync_install = false,
-
-  	ignore_install = { "javascript" },
-
-  	highlight = {
-    	enable = true,
-
-    	disable = { },
-
-    	additional_vim_regex_highlighting = false,
-  		},
+	sync_install = false,
+	ignore_install = { "javascript" },
+	highlight = {
+		enable = true,
+		disable = { },
+		additional_vim_regex_highlighting = false,
+		},
 	}
+-- Requires bash-language-server on arch
+	require'lspconfig'.bashls.setup{}
+
 EOF
