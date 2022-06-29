@@ -35,9 +35,6 @@ set autoindent
 "show matching pairs -> () [] {}
 set showmatch
 
-" highlight current line
-set cursorline
-
 " copy to clipboard
 noremap <C-y> "+y  
 
