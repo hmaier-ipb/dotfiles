@@ -10,7 +10,7 @@ config_files=(
 	"$HOME/.bashrc"
 	"$HOME/.vimrc"
 	"$HOME/.ssh/config"
-	"$HOME/.config/polybar/config"
+	"$HOME/.config/polybar/config.ini"
 	"$HOME/.config/nvim/init.vim"
 	"openmw"
 	"$HOME/.scripts/edit-config-files.sh"
