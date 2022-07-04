@@ -47,4 +47,3 @@ vmap <TAB> >gv
 " Dedentation
 vmap <S-TAB> <gv
 
-
