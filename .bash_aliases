@@ -1,8 +1,8 @@
 #-----------------------------------------
 #my nice bash aliases
 #-----------------------------------------
-alias edit-bashrc="vim /home/hmaier/.bashrc"
-alias edit-bashaliases="vim /home/hmaier/.bash_aliases"
+alias edit-bashrc="vim $HOME/.bashrc"
+alias edit-bashaliases="vim $HOME/.bash_aliases"
 alias edit-sxhkdconifg="vim ~/.config/sxhkd/sxhkdrc"
 alias edit-bspwmrc="vim ~/.config/bspwm/bspwmrc"
 alias edit-polybarconfig="vim ~/.config/polybar/config"
@@ -15,7 +15,7 @@ alias login-raspi="ssh pi@192.168.178.102"
 alias login-mysql="sudo mysql -p -u root"
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias key-names="xev -event keyboard | grep keysym"
+alias key="xev -event keyboard | grep keysym"
 alias update="sudo pacman -Syu"
 alias b="exec bash"
 alias yt-dl="yt-dlp -x  --audio-format mp3"
