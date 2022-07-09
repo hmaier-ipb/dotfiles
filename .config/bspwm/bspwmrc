@@ -6,7 +6,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 #status bar (polybar)
 killall -q polybar
-polybar --config-file="$HOME/.config/polybar/config.ini" -r bar &
+polybar --config-file="$HOME/.config/polybar/config.ini" -r center_bar &
 
 # use feh for background
 bg=$(cat /home/$USER/Bilder/backgrounds/.active-background.txt)
@@ -29,7 +29,7 @@ xset r rate 200 30
 
 # declaring the differnt workspaces
 #bspc monitor -d I II III IV V VI VII VIII #### comment 9 and 10 out IX X
-bspc monitor -d 1 2 3 4 5 
+bspc monitor -d 1 2 3 4 5 6
 #bspc monitor -d web 2 3 4 steam 
 
 bspc config border_width         3
@@ -40,10 +40,9 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc config focus_follows_pointer false
-bspc config focused_border_color '#40E0D0'
+bspc config focused_border_color '#EEEEE'
 
 bspc config automatic_scheme longest_side
-
 
 bspc rule -a Evince state=floating
 bspc rule -a Viewnior state=floating
