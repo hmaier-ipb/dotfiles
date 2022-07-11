@@ -1,0 +1,23 @@
+/*Copied from https://github.com/adi1090x/widgets*/
+.time_box{
+	border-radius: 10px;
+	background-color: grey;
+}
+.time{
+	color: #EEEEEE;
+	font-size : 70px;
+	font-weight : bold;
+}
+.time_hour {
+	margin : 0px 0px 0px 0px;
+}
+.time_min {
+	margin : 0px 0px 0px 0px;
+}
+
+.time_day {
+	color: #EEEEEE;
+	font-size : 30px;
+	font-weight : normal;
+	margin : 0px 0px 20px -20px;
+}
