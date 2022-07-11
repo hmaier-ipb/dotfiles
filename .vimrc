@@ -1,14 +1,11 @@
 "-----------------------------------------------
 " my .VIMRC, the root of all other vim configs	|
 "-----------------------------------------------
-"
-"
 " only if not set before:
 " use vim-defaults instead
 " of vi-defaults (easier, more user friendly)
 if &compatible          
   set nocompatible      
-  						
 endif
 
 syntax on
@@ -46,4 +43,8 @@ vmap <TAB> >gv
 
 " Dedentation
 vmap <S-TAB> <gv
+
+inoremap (		()<Left>
+
+"inoremap { 		{}<ESC>ho
 

@@ -24,7 +24,5 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# RUST
-if [[ "$HOSTNAME" == "wooden-arch-box" ]]; then
-	. "$HOME/.cargo/env"
-fi
+# Source rust cargo directory
+source $HOME/.cargo/env

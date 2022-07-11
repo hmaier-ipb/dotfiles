@@ -38,6 +38,7 @@ alias pwdc="pwd | xclip -selection clipboard"
 alias lightdm-settings="sudo lightdm-gtk-greeter-settings"
 alias lsorphans="sudo pacman -Qdt"
 alias rmorphans="sudo pacman -Rs $(pacman -Qtdq)"
+alias d="date"
 
 
 alias dfr='/usr/bin/git --git-dir=$HOME/repos/dotfiles/ --work-tree=$HOME'
