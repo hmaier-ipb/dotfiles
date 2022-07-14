@@ -9,6 +9,7 @@ alias edit-polybarconfig="vim ~/.config/polybar/config"
 alias edit-vimrc="vim ~/.vimrc"
 alias edit-picomconfig="vim ~/.config/picom/picom.conf"
 alias mouse-config="piper"
+alias lightdm-settings="sudo lightdm-gtk-greeter-settings"
 
 alias login-xyz="ssh root@hendrikmaier.xyz"
 alias login-raspi="ssh pi@192.168.178.102" 
@@ -36,12 +37,12 @@ alias disks="lsblk"
 alias netstat="ss -lntu"
 alias uz="unzip"
 alias pwdc="pwd | xclip -selection clipboard"
-alias lightdm-settings="sudo lightdm-gtk-greeter-settings"
+#alias realpathc="echo $1 | realpath | xclip -selection clipboard"
 alias lsorphans="sudo pacman -Qdt"
 alias rmorphans="sudo pacman -Rs $(pacman -Qtdq)"
 alias d="date"
 
-
+# Special alias for maintaining my dotfiles
 alias dfr='/usr/bin/git --git-dir=$HOME/repos/dotfiles/ --work-tree=$HOME'
 
 

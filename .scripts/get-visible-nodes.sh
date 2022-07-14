@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-# Giving out the id of the focused desktop
-bspc query -D -d
+bspc query -N -d '.focused'
 
-# Giving out the the id of desktop 4
-#bspc query -D -d '^4'
 
 #---------------------------------------------
 # EXPLANATION:
