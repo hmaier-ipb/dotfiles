@@ -39,12 +39,12 @@ noremap <C-y> "+y
 noremap <C-p> "+p  
 
 " Indentation
-vmap <TAB> >gv
+vmap <TAB>		>gv
 
 " Dedentation
-vmap <S-TAB> <gv
+vmap <S-TAB> 	<gv
 
-inoremap (		()<Left>
+"inoremap (		()<Left>
 
 "inoremap { 		{}<ESC>ho
 

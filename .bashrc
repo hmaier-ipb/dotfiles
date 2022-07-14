@@ -7,6 +7,7 @@
 
 #VARIABLES
 export EDITOR=vim
+export LESSHISTFILE=/dev/null
 
 alias ls='ls --color=auto'
 
