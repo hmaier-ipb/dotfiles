@@ -9,7 +9,7 @@ killall -q polybar
 polybar --config-file="$HOME/.config/polybar/config.ini" -r center_bar &
 
 # use feh for background
-bg=$(cat /home/$USER/Bilder/backgrounds/.active-background.txt)
+bg=$(cat $HOME/Bilder/backgrounds/.active-background.txt)
 feh --no-fehbg --bg-scale "$bg" &
 
 # for java applications
@@ -68,6 +68,6 @@ fi
 
 # work pc
 if [[ $HOSTNAME -eq "azt-4329" ]]; then
-	remmina & # TODO: replace this with a script
+	remmina & # replace this with a script
 
 fi
