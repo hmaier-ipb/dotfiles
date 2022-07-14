@@ -26,22 +26,3 @@ colorscheme onedark
 " CTRL + x to open completion
 inoremap <C-x> <C-x><C-o>
 
-" This lua-code will enable highlighting with treesitter!
-":lua << EOF
-"-- Inits tree-sitter for code-highlighting
-"	require'nvim-treesitter.configs'.setup {
-"	ensure_installed = "all",
-"	sync_install = false,
-"	ignore_install = { "javascript" },
-"	highlight = {
-"		enable = true,
-"		disable = { },
-"		additional_vim_regex_highlighting = false,
-"		},
-"	}
-"
-"
-"-- Requires bash-language-server on arch
-"-- require'lspconfig'.bashls.setup{}
-"
-"EOF
