@@ -46,7 +46,3 @@ alias d="date"
 alias dfr='/usr/bin/git --git-dir=$HOME/repos/dotfiles/ --work-tree=$HOME'
 
 
-# work PC
-if [[ $HOSTNAME -eq "azt-4329" ]];then
-	alias login-internals="ssh ipbadmin@internals"
-fi
