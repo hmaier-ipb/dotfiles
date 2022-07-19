@@ -39,12 +39,12 @@ noremap <C-y> "+y
 noremap <C-p> "+p  
 
 " Indentation
-vmap <TAB>		>gv
+vnoremap >	>gv
 
 " Dedentation
-vmap <S-TAB> 	<gv
+vnoremap <	<gv
 
-"inoremap (		()<Left>
+" unhighlight
+nnoremap <esc> :nohlsearch<cr><esc>
 
-"inoremap { 		{}<ESC>ho
-
+noremap <F5> :so $MYVIMRC<cr>
