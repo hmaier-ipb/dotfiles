@@ -8,6 +8,6 @@ date=$(date)
 # TODO: improve formatting with sed
 echo "$date $time minutes" >> $log
 
-cp $log $HOME/networkshare/hmaier/logs/
+[[ -d $HOME/networkshare/hmaier ]] && cp $log $HOME/networkshare/hmaier/logs/
 
 
