@@ -39,12 +39,13 @@ noremap <C-y> "+y
 noremap <C-p> "+p  
 
 " Indentation
-vnoremap >	>gv
+xnoremap <TAB>	>gv
 
 " Dedentation
-vnoremap <	<gv
+xnoremap <S-TAB>	<gv
 
 " unhighlight
 nnoremap <esc> :nohlsearch<cr><esc>
 
+" reloading the vimrc
 noremap <F5> :so $MYVIMRC<cr>
