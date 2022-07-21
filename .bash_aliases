@@ -42,6 +42,8 @@ alias lsorphans="sudo pacman -Qdt"
 alias rmorphans="sudo pacman -Rs $(pacman -Qtdq)"
 alias d="date"
 alias hostname="echo $HOSTNAME"
+alias xclip="xclip -selection clipboard"
+
 
 # Special alias for maintaining my dotfiles
 alias dfr='/usr/bin/git --git-dir=$HOME/repos/dotfiles/ --work-tree=$HOME'
