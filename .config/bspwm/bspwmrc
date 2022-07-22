@@ -25,7 +25,7 @@ numlockx on &
 xsetroot -cursor_name left_ptr &
 
 # setting keyboard DELAY (when pressing button) and SPEED (of how many chars are typed per second)
-xset r rate 200 30
+xset r rate 200 30 &
 
 # declaring the differnt workspaces
 #bspc monitor -d I II III IV V VI VII VIII #### comment 9 and 10 out IX X
@@ -48,13 +48,13 @@ bspc rule -a Evince state=floating
 bspc rule -a Viewnior state=floating
 bspc rule -a Screenkey manage=off
 bspc rule -a Zathura state=floating
+bspc rule -a "feh"  state=floating 
 
 bspc rule -a "jetbrains-phpstorm" desktop='^1' state=floating
 bspc rule -a "brave-browser" desktop='^2' state=tiled
 bspc rule -a "minecraft-launcher" desktop='^4' state=tiled
 bspc rule -a Steam desktop='^5' state=floating
 #bspc rule -a "Remmina Remote-Desktop Client" desktop='^5' state=pseudo_tiled rectangle=900x500+500+800_
-bspc rule -a "feh"  state=floating 
 
 #----------------------------
 #Auto Start Programms
@@ -68,6 +68,12 @@ fi
 # work pc
 if [[ $HOSTNAME -eq "azt-4329" ]]; then
 	remmina & # replace this with a script
-
-
+	bspc node -d '^5'
+	brave &
+	bspc node -d '^1'
+	xfce4-terminal &			
+	bspc node -d '^2'
 fi
+
+
+
