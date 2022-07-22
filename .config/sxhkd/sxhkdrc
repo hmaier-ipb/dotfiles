@@ -44,7 +44,7 @@ super + plus
 	/home/$USER/.scripts/edit-config-files.sh
 
 # changing backgrounds
-super + b
+ctrl + alt + b
 	/home/$USER/.scripts/change-background.sh
 
 # starting global protect client
@@ -80,9 +80,13 @@ super + shift + m
 # state/flags
 #---------------------------
 
-# set the window state
-super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+# set the window state (tiled & pseudo_tiled)
+super + {t,shift + t}
+	bspc node -t {tiled,pseudo_tiled}
+
+# floating & fullscreen 
+super + {_,shift } + f
+	bspc node -t {floating,fullscreen}
 
 ## set the node flags
 super + ctrl + {m,x,y,z}
@@ -102,12 +106,8 @@ super + {_,shift + }{h,j,k,l}
 #	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
-super + {_,shift + }c
-	bspc node -f {next,prev}.local.!hidden.window
-
-# focus the next/previous desktop in the current monitor
-#super + bracket{left,right}
-#	bspc desktop -f {prev,next}.local
+#super + {_,shift + } c
+#	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -168,7 +168,17 @@ super + {Left,Right}
 	bspc desktop -f {prev,next}
 
 #move node while cycling 
-#super + ctrl + {y,x}
 super + ctrl + {Left,Right}
     bspc node -d {prev,next} --follow
+
+# cycling forwards through current workspace
+super + n
+	bspc node -f next.local.!hidden.window
+
+# swap focused to biggest window
+super + g
+	bspc node --swap 'biggest.local.window.!hidden' 
+
+
+
 
