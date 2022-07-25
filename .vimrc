@@ -38,14 +38,14 @@ noremap <C-y> "+y
 " paste from clipboard
 noremap <C-p> "+p  
 
-" Indentation
-xnoremap <TAB>	>gv
+" Indentation, alternativly use <TAB>
+xnoremap >	>gv
 
-" Dedentation
-xnoremap <S-TAB>	<gv
+" Dedentation, alternativly use <S-TAB>
+xnoremap >	<gv
 
 " unhighlight
-nnoremap <esc> :nohlsearch<cr><esc>
+nnoremap <silent> <esc> :nohlsearch<cr><esc>
 
 " reloading the vimrc
-noremap <F5> :so $MYVIMRC<cr>
+noremap <silent> <F5> :so $MYVIMRC<cr>
