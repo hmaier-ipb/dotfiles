@@ -26,3 +26,11 @@ colorscheme onedark
 " CTRL + x to open completion
 inoremap <C-x> <C-x><C-o>
 
+" toggling NERDTREE
+nnoremap <silent> <C-T> :NERDTreeToggle<CR>
+
+" turn off tabNine (to much ram usage)urn off tabNine (to much ram usage)
+let g:easycomplete_tabnine_enable = 0
+
+" change working dir when navigating with nerd tree
+set autochdir
