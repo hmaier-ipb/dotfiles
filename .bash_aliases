@@ -22,8 +22,8 @@ alias b="exec bash"
 alias yt-dl="yt-dlp -x  --audio-format mp3"
 alias timeshift="sudo timeshift-gtk"
 alias p="sudo pacman"
-alias poff="$HOME/.scripts/uptime-log.sh && poweroff"
-alias reboot="$HOME/.scripts/uptime-log.sh && reboot"
+alias poff="poweroff"
+alias reboot="reboot"
 alias nf="neofetch"
 alias ls="exa"
 alias r="ranger"
@@ -48,4 +48,10 @@ alias xclip="xclip -selection clipboard"
 # Special alias for maintaining my dotfiles
 alias dfr='/usr/bin/git --git-dir=$HOME/repos/dotfiles/ --work-tree=$HOME'
 
-
+if [[ $HOSTNAME == "azt-4329" ]];then
+	alias poff="$HOME/.scripts/uptime-log.sh && poweroff"
+	alias reboot="$HOME/.scripts/uptime-log.sh && reboot"
+else
+	alias poff="poweroff"
+	alias reboot="reboot"
+fi
